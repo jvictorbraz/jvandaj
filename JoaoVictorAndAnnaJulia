@@ -6,18 +6,22 @@
     <title>João Victor e Anna Júlia</title>
     <link href="https://fonts.googleapis.com/css2?family=Wild+Love&display=swap" rel="stylesheet">
     <style>
-        /* Estilo do fundo da página */
+        /* Ajustes gerais do corpo */
         body {
             font-family: 'Wild Love', cursive;
             background-color: black;
             color: white;
             text-align: center;
             padding: 30px;
-            position: relative;
-            overflow: auto; /* Permite rolar a página */
-            -webkit-font-smoothing: antialiased;
             margin: 0;
-            padding-bottom: 100px; /* Garantir que tenha espaço suficiente no final da página */
+            position: relative;
+            overflow-x: hidden; /* Garante que não tenha barra horizontal */
+            overflow-y: auto;   /* Permite rolagem vertical */
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;   /* Garante que o conteúdo ocupe toda a altura da tela */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         /* Estilo do título */
@@ -33,6 +37,7 @@
             font-size: 20px;
             color: white;
             text-shadow: 0 0 5px red, 0 0 10px red;
+            line-height: 1.6;
         }
 
         /* Contador com estilo */
